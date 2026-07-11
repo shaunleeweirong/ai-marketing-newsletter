@@ -2,7 +2,7 @@ node_modules/
 .env
 data/seen.json
 data/seed-list.json
-drafts/
+drafts/sent-*.html
 *.log
 .DS_Store
 .playwright-mcp/
