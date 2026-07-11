@@ -1,0 +1,24 @@
+{
+  "name": "ai-marketing-newsletter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Automated, human-approved weekly 'AI for Marketers' newsletter engine (Phase 1).",
+  "scripts": {
+    "generate": "tsx src/generate.ts",
+    "send": "tsx src/send.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.111.0",
+    "dotenv": "^17.4.2",
+    "marked": "^18.0.6",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "tsx": "^4.23.0",
+    "typescript": "^7.0.2"
+  }
+}
