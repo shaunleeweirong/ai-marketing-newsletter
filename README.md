@@ -12,27 +12,32 @@ subscription with no separate API key.
 
 ## Mode A — Routine mode (recommended · no API key)
 
-A scheduled [Claude Code Routine](https://code.claude.com/docs/en/routines) runs weekly in
-the cloud, on your Claude subscription. It reads [`ROUTINE.md`](ROUTINE.md), web-searches
-this week's stories, drafts the issue, and **opens a pull request** with `drafts/<date>.md`
-for you to review.
+A scheduled [Claude Code Routine](https://code.claude.com/docs/en/routines) runs **twice a
+week (Mon + Thu)** in the cloud, on your Claude subscription. It reads [`ROUTINE.md`](ROUTINE.md),
+web-searches the latest AI updates, drafts a **candidate menu**, and **opens a pull request**
+with `drafts/<date>.md` for you to review.
 
 ```
-Weekly routine (Claude, your subscription)
-  → web-searches this week's AI-marketing stories
-  → applies the rubric in ROUTINE.md + drafts the issue
+Routine (Claude, your subscription) — Mon + Thu
+  → works the sourcing beats (frontier labs, TLDR AI/Marketing, creative AI, LinkedIn)
+  → produces a MENU of ~25–35 verified candidates across 6 sections, ⭐ = suggested feature
   → opens a PR:  "Draft: AI for Marketers — <date>"   (in THIS repo, on a side-branch)
         ↓
-  You review/edit the draft in the PR on GitHub → Merge to approve (or close to skip)
+  You review the PR on GitHub → trim the menu to the issue you want → Merge (or close to skip)
         ↓
   Send it (Mode B `npm run send`, run locally when you're ready to email a list)
 ```
 
-**The PR is your edit-gate:** good week → one click (Merge); off week → edit the markdown
-in GitHub's browser editor, then merge; bad week → close it, nothing ships.
+It's an **AI-updates-led newsletter for marketers**, in six sections: **Frontier Model Watch**,
+**Put It To Work** (updates with a marketing use case), **Big Updates, No Marketing Angle
+(Yet)**, **AI for Creatives**, **LinkedIn Marketing Desk**, and **Tool of the Week / Steal
+This Workflow**. Each draft is a menu — the routine ⭐-marks its picks and you trim.
 
-**The rubric and format live in [`ROUTINE.md`](ROUTINE.md)** — edit that file to change the
-newsletter's taste or structure. Past drafts in `drafts/` are the routine's "already
+**The PR is your edit-gate:** the draft over-delivers on purpose; you delete what you don't
+want, tweak what you keep, then Merge. Close it to skip a run.
+
+**The rubric, sections, and sourcing live in [`ROUTINE.md`](ROUTINE.md)** — edit that one file
+to change what gets covered or how. Past drafts in `drafts/` are the routine's "already
 covered" memory, so it won't repeat stories.
 
 ### Set up the routine (one time)
@@ -43,9 +48,10 @@ covered" memory, so it won't repeat stories.
    - **CLI:** `/schedule` in Claude Code.
 3. Configure it:
    - **Repository:** `shaunleeweirong/ai-marketing-newsletter`
-   - **Schedule:** weekly (e.g. Monday morning)
-   - **Prompt:** _"Follow the instructions in `ROUTINE.md`: find this week's AI-for-marketers
-     stories, draft the issue to `drafts/<today>.md`, and open a PR into main. Do not merge."_
+   - **Schedule:** twice weekly — Mon + Thu (cron `0 0 * * 1,4` = 8:00 AM SGT)
+   - **Prompt:** _"Follow `ROUTINE.md`: work the sourcing beats, produce a candidate menu of
+     ~25–35 verified AI updates across the six sections (⭐-mark suggested features), write it
+     to `drafts/<today>.md`, and open a PR into main. Do not merge."_
    - No secrets or custom network access needed (web search routes through Anthropic).
 
 ---
