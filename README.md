@@ -28,10 +28,11 @@ Routine (Claude, your subscription) — Mon + Thu
   Send it (Mode B `npm run send`, run locally when you're ready to email a list)
 ```
 
-It's an **AI-updates-led newsletter for marketers**, in six sections: **Frontier Model Watch**,
-**Put It To Work** (updates with a marketing use case), **Big Updates, No Marketing Angle
-(Yet)**, **AI for Creatives**, **LinkedIn Marketing Desk**, and **Tool of the Week / Steal
-This Workflow**. Each draft is a menu — the routine ⭐-marks its picks and you trim.
+It's an **AI-updates-led newsletter for marketers**, in six sections: **Frontier Model Watch**
+(labs + creative-model + marketing launches), **AI Use Cases of the Week** (marketing use cases
+mined from high-engagement Reddit/LinkedIn/X posts + blogs), **Microsoft Copilot Desk** (official
+releases + community use cases), **LinkedIn Marketing Desk**, **Big Updates, No Marketing Angle
+(Yet)**, and **Tool of the Week**. Each draft is a menu — the routine ⭐-marks its picks and you trim.
 
 **The PR is your edit-gate:** the draft over-delivers on purpose; you delete what you don't
 want, tweak what you keep, then Merge. Close it to skip a run.
