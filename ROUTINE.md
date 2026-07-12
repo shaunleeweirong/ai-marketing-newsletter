@@ -77,6 +77,12 @@ actually did and shared. **Engagement is the selection signal:** prioritise
 - **X:** viral marketing-AI threads / case studies / build-in-public write-ups.
 - **Blogs / newsletters:** practitioner teardowns and how-to write-ups.
 
+**Mix required.** Industry studies and reports are welcome — but every issue must ALSO surface
+several **concrete case studies**: a specific person/team, the exact thing they did (the
+workflow, the prompt, the tool stack), and the result. Aim for **at least half** this section
+to be hands-on case studies rather than reports. If concrete ones are hard to find, dig harder
+in the social sources before falling back to studies.
+
 Each item: **what they did + the result/outcome + why it's worth stealing**, with a link to
 the actual post. Use cases must be **marketing-related**. Social ROI/results claims are often
 unverifiable — frame them as **"claimed"** and don't present unverified metrics as fact; favour
@@ -118,7 +124,12 @@ Exactly ONE AI tool worth a spotlight, with a blunt `**Verdict:**` ("Worth it �
   filler to hit a number.
 - **Link integrity.** Each item's URL must be the specific source for THAT item's claim, and
   the linked page must actually be about it. **Never reuse the same URL on two items.** One
-  item = one distinct, correct link.
+  item = one distinct, correct link. Check each URL is well-formed — no stray quotes, brackets,
+  or trailing characters.
+- **One story, one section (no duplicates within an issue).** A given story, study, tool, or
+  launch appears in **at most one section** of the same issue — pick its single best home. This
+  includes Tool of the Week: if you spotlight a tool there, do NOT also list it in Frontier
+  Model Watch (or anywhere else). The same story in two sections is a fail.
 - **Source-quality hierarchy.** Prefer **primary/official** (lab newsrooms, official product
   blogs, API changelogs, the original social post) > reputable trade press > personal blogs /
   press-release reposts. Link the primary source when one exists. **For a named company's
@@ -134,7 +145,8 @@ Exactly ONE AI tool worth a spotlight, with a blunt `**Verdict:**` ("Worth it �
 - **Signal over hype.** Every item needs a "so what" — never just "X announced Y." Cut hype.
 - **Relevance tag** on every item: `Direct` (clear marketing use case) / `Indirect` (matters
   to marketers, no direct play) / `FYI` (context).
-- **Dedup** against all prior `drafts/*.md`.
+- **Dedup across issues** against all prior `drafts/*.md` (don't repeat a story/tool/link
+  covered in a previous issue).
 
 ---
 
