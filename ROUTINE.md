@@ -34,7 +34,12 @@ fluff, no emoji spam.
    rumor — see rules).
 6. **Write the draft** to `drafts/<TODAY>.md` (today's real date, `YYYY-MM-DD` — run `date`
    if unsure; do not hardcode) using the exact format below.
-7. **Open a pull request** into `main`, titled `Draft: AI for Marketers — <TODAY>`, with the
+7. **Self-verify pass (do this before opening the PR).** Re-open the URL of every ⭐ pick and
+   spot-check several others. Confirm each page actually loads and is genuinely about that
+   item. Fix or drop anything that fails: a dead link, a page about something else, a source
+   dated outside the window, or the same URL reused on two items. Only ⭐ items you've
+   re-confirmed.
+8. **Open a pull request** into `main`, titled `Draft: AI for Marketers — <TODAY>`, with the
    verification checklist (below) in the PR body. **Do not merge it** — the human reviews,
    trims the menu, and merges.
 
@@ -95,9 +100,18 @@ Include notable LinkedIn marketing product launches and any API changes that aff
 - **Menu, not padding.** Aim for ~25–35 candidates, but every one must be a real, verified
   item with a concrete takeaway. If a section is thin this run, list fewer — never invent
   filler to hit a number.
+- **Link integrity.** Each item's URL must be the specific source for THAT item's claim, and
+  the linked page must actually be about it. **Never reuse the same URL on two items.** One
+  item = one distinct, correct link.
 - **Source-quality hierarchy.** Prefer **primary/official** (lab newsrooms, official product
   blogs, API changelogs) > reputable trade press > personal blogs / press-release reposts.
-  Link the primary source when one exists.
+  Link the primary source when one exists. **For a named company's product launch (especially
+  LinkedIn), link that company's own newsroom/blog — not a third-party SEO recap** — whenever
+  the primary post exists.
+- **Recency.** Cover roughly the last 7 days (up to ~10 for frontier launches). Do NOT cite a
+  source dated outside that window as if it's new — the URL's own date must match the claim's
+  timeframe. A months-old archive link for a "this week" item is a fail: drop it or find the
+  current source.
 - **Rumor rule (X / Reddit / unconfirmed).** If a claim isn't backed by a primary or
   reputable source, either corroborate it or clearly label it **"⚠️ Unconfirmed"** in the
   summary. Never present rumor as fact.
